@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form method="post" asp-action="ManageData" asp-controller="DataImport">
+        <div class="">
+            <label for="Heading">Enter Heading</label>
+            <input type="text" id="Heading">
+            <input type="file" id="Heading">
+        </div>
+        <div class=" align-right">
+            <button type="submit" name="Save" value="Save Data" class="btn btn-primary"></button>
+            <button type="reset" value="Reset Form" class="btn btn-secondary"></button>
+        </div>
+    </form>
+</div>
